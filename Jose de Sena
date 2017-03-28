@@ -1,0 +1,29 @@
+#Você foi contratado pelo Ministério da Saúde (MS) para desenvolver um sistema que
+    #informa se um conjunto de 10 meninas devem ser vacinadas contra o Human
+   # Papillomavirus (HPV). De acordo com a campanha do MS todas as meninas entre 9
+ #  e 13 anos devem ser vacinadas. Assim, faça um algoritmo que lê a idade de 10
+   # meninas (esse programa só serve para meninas) e em seguida, o programa deverá
+  #  apresentar a quantidade de adolescentes que foram vacinadas contra o HPV até o
+   # momento.
+   # Ex. Se entrar com a idade de 10 anos o programa deve escrever na tela “DEVE SER
+    #VACINADA” e depois informar que 1 menina foi vacinada até o momento. Se for
+    #informada a idade de 11 anos o programa deve informar na tela “DEVE SER
+    #VACINADA” e informar que 2 meninas foram vacinadas até o momento; se for
+    #informada a idade de 8 anos o programa deve informar a mensagem “NÃO DEVE
+    #SER VACINADA” e informar que 2 meninas foram vacinadas até o momento e etc.*/
+
+
+cont=0
+
+for i in range (10):
+    nome = input("Digite seu nome:  ")
+    idade = int(input("Digite sua idade:  "))
+
+    if idade >= 9 and idade <= 13:
+        cont = cont + 1
+        print("Deve ser vacinada ...")
+        print(cont, "foi vacinada ate  o monmento")
+
+    else:
+        print("Não deve ser vacinada")
+        print(cont, " Menina foi vacinada ate  o monmento")
